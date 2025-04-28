@@ -180,3 +180,34 @@
     padding: 5px;
     border-radius: 5px;
 }
+
+/* floating button */
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    overflow: hidden;
+}
+
+.floating-button img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+.floating-button:hover {    
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px #00000033;
+}
