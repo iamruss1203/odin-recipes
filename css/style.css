@@ -1,3 +1,5 @@
+/* universal selector */
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,6 +7,8 @@
     padding: 0;
     /* border: 2px solid #000000; */
 }
+
+/* header */
 
 .homepage-tittle-container {
     display: flex;
@@ -23,8 +27,42 @@
 
 .homepage-title{
     margin: 0;
-    font-size: clamp(1.4rem, 2.7vw, 1.6rem);
+    font-size: 1.5rem;
 }
+
+.home-icon,
+.homepage-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.25rem;
+    background-color: #E7F1FF;
+    font-weight: bold;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    height: 35px;
+    text-align: center;
+    box-shadow: 0 10px 25px #0000001a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.home-icon,
+.homepage-link:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px #00000033;
+}
+
+.home-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+/* main content index */
 
 .recipe-list {
     padding: 10px;
@@ -72,10 +110,73 @@
     margin: 10px auto 30px;
 }
 
+/* footer */
+
 .footer-text {
     background-color: #D0E3FF;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
     margin: 10px 20px;
+}
+
+/* main content sub page */
+
+.container-recipe {
+    padding: 10px 10px 10px 10px;
+    margin: 0 20px;
+    background-color: #D0E3FF;
+    border-radius: 10px;
+}
+
+.header-recipe {
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E7F1FF;
+}
+
+.header-description {
+    margin: 10px auto;
+    font-size: 1rem;
+    padding: 5px;
+    background-color: #E7F1FF;
+    border-radius: 5px;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-height: 500px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0 20px 0;
+}
+
+/* unordered list */
+
+.ingredients-list {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #E7F1FF;
+    margin-bottom: 20px;
+}
+
+.ingredients-item {
+    margin: 5px;
+}
+
+.ingredients-item::marker {
+    color: #334EAC;
+}
+
+.steps, .steps-description {
+    margin: 10px auto 20px;
+}
+
+.container-steps {
+    background-color: #E7F1FF;
+    padding: 5px;
+    border-radius: 5px;
 }
