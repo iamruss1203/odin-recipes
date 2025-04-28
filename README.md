@@ -7,3 +7,4 @@ Build a website
 
 # Technologies used
 HTML
+CSS
